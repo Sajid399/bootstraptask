@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bootstrap Chatbot</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for the sidebar */
+        .sidebar {
+            background-color: black;
+            height: 100vh;
+            /* Adjust this value as needed */
+        }
+
+        .chatbox {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+
+        .chatbox-input {
+            flex: 1;
+            border: none;
+            background-color: transparent;
+            padding-right: 40px;
+        }
+
+        .send-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-left: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-light bg-success d-flex justify-content-between">
+        <ul style="list-style: none;display:inline-flex;">
+          <li><img src="hero-img.png" height="30px" width="30px" style="border-radius: 50%;" alt="error">
+           <li> <p style="color: aliceblue;" class="m-3">LIAM</p></li> 
+        </ul>
+        <div>
+        <img src="hero-img.png" height="30px" width="30px" style="border-radius: 50%;" alt="">
+        </div>
+
+       
+        
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-sm-3 sidebar bg-success d-flex flex-column justify-content-between p-3">
+                <div>
+                    <p style="color: aliceblue;">Reset Chat</p>
+                    <p style="color: azure;">FAQ</p>
+                    <p style="color: azure;">Alaska, USA</p>
+                </div>
+                <div>
+                    <a href="#">Change Location</a>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-sm-9">
+                <div class="m-4">
+                    <button type="button" class="btn btn-outline-success rounded">What can I do?</button>
+                    <button type="button" class="btn btn-outline-success rounded active">How can we talk?</button>
+                </div>
+                <div class="container m-3">
+                    <h6>what can I do?</h6>
+                    <div class="border bg-light p-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias fuga, nesciunt
+                        odio maxime voluptatem doloremque molestiae id quidem, eius autem, nisi culpa ipsum architecto
+                        accusantium recusandae asperiores praesentium veniam.
+                        Iste dicta molestiae provident nesciunt quibusdam facere est similique mollitia impedit
+                        molestias, aspernatur tempora blanditiis natus doloribus quos incidunt possimus voluptatum quo
+                        suscipit. Magnam, aut laboriosam numquam enim ipsa optio.
+                    </div>
+                </div>
+                <div class="container m-3">
+                    <div class="border bg-light p-3">
+                        <h6>What's Wrong with my answer?</h6>
+                        <button type="button" class="btn btn-outline-success btn-sm">Behavior</button>
+                        <button type="button" class="btn btn-outline-success btn-sm m-3">Non Factual</button><br>
+                        <button type="button" class="btn btn-outline-success">Provide Additional Feedback</button>
+                    </div>
+                </div>
+
+                <!-- Chatbox -->
+                <div class="chatbox p-2 m-5">
+                    <!-- Chatbot Input Field -->
+                    <input type="text" class="form-control chatbox-input" placeholder="Type your message here">
+                    <!-- Send Button Icon -->
+                    <button class="btn btn-light send-button active" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                          </svg>
+                    </button>
+                </div>
+                <div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias fuga, nesciunt
+                    odio maxime voluptatem doloremque molestiae id quidem, eius autem</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
